@@ -1,0 +1,2 @@
+#/bin/bash
+git rebase -i `git svn log --show-commit | grep '[a-e0-9]\{7\}' | head -1 | cut -c 9-16`
